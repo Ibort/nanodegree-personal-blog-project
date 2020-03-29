@@ -5,7 +5,7 @@ body{
 .container {
   display:grid;
   grid-template-columns: repeat(5,1fr);
-  grid-auto-rows: auto;
+  grid-template-rows: auto;
 }
 
 .header{
@@ -33,19 +33,46 @@ body{
 }
 
 .youtube-logo img{
-  width: 50%;
+  width: 40%;
 }
 .box{
     border: 1px solid red;
     background: yellow;
 }
 
-.intro{
+.intro-pic{
+  min-height: 350px;
+  background-image: url("../pic/myself.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  grid-area: 2 / 3 / 3 / 6;
+}
 
+.intro{
+  width: 100%;
+  height: 100%;
+  background: white;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.intro-text p{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.7em;
+  text-align: justify;
+}
+
+.intro h1{
+  text-align: center;
 }
 
 .content{
+  grid-area: 3 / 1 / 4 / 6;
 }
 
 .footer{
+  grid-area: 4 / 1 / 5 / 6;
 }
