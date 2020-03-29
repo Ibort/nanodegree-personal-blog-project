@@ -4,22 +4,36 @@ body{
 
 .container {
   display:grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows: auto;
 }
 
 .header{
-  width: 100vw;
-  height: 100vh;
+  grid-area: 1 / 1 / 2 / 6;
+  height: 50vw;
   background-image: url("../pic/head_background.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+
+.title-logo{
+  float: left;
+  width:80%;
 }
 
 .title-logo img{
-  position:fixed;
-  width: 40vw;
-  padding-top: 50px;
-  padding-left: 100px;
+  padding-top: 4%;
+  padding-left: 8%;
+  width: 50%;
+}
+
+.youtube-logo{
+  float: right;
+  width:20%;
+}
+
+.youtube-logo img{
+  width: 50%;
 }
 .box{
     border: 1px solid red;
