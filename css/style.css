@@ -48,6 +48,7 @@ html {
 .content-newest{
   display: flex;
   background: url("../pic/sardinia.jpg");
+  background-position: right -200px bottom 0px;
   background-size: cover;
   font-size: 20px;
   grid-area: 2 / 1 / 3 / 6;
@@ -153,46 +154,44 @@ html {
   height:50%;
 }
 
-
-
 #art1 {
-  background: url("../pic/sardinia.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right -260px bottom 0px;
-}
-
-#art1-title-bg{
-  background: url("../pic/Map_of_Sardinia_Italy.png") no-repeat center/contain;
-}
-
-#art2 {
   background: url("../pic/bosnia_2019.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right -50px bottom 0px;
 }
 
-#art2-title-bg{
+#art1-title-bg{
   background: url("../pic/map_of_bosnia.png") no-repeat center/contain;
 }
 
-#art3 {
+#art2 {
   background: url("../pic/hun_2019_may.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right -200px bottom 0px;
 }
 
-#art3-title-bg{
+#art2-title-bg{
   background: url("../pic/map_of_hungary.png") no-repeat center/contain;
 }
 
-#art4 {
+#art3 {
   background: url("../pic/switzerland_2019_feb.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right -325px bottom 0px;
+}
+
+#art3-title-bg{
+  background: url("../pic/map-of-switzerland2.png") no-repeat center/contain;
+}
+
+#art4 {
+  background: url("../pic/switzerland_2018-19_dec-jan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right -125px bottom 0px;
 }
 
 #art4-title-bg{
@@ -200,10 +199,10 @@ html {
 }
 
 #art5 {
-  background: url("../pic/switzerland_2018-19_dec-jan.jpg");
+  background: url("../pic/joyride_switzeland_2019_dec.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right -125px bottom 0px;
+  background-position: right -210px bottom 0px;
 }
 
 #art5-title-bg{
@@ -211,10 +210,22 @@ html {
 }
 
 
+
 .content-title-img img{
   width: 50%;
   height: auto;
 }
 .footer{
+  position: relative;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(255,255,255,1) 100%);
+  height: 20px;
+  font-size: 0.5em;
   grid-area: 4 / 1 / 5 / 6;
+  background-color: black;
+}
+
+.footer span{
+  position:absolute;
+  bottom:2px;
+  left:2px;
 }
