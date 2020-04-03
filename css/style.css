@@ -145,6 +145,11 @@ p{
 .container {
   display:flex;
   flex-flow: column;
+  border-top: 5px solid;
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border-image-source: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
+  border-image-slice: 1;
 }
 
 .header{
