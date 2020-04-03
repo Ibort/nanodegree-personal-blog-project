@@ -1,3 +1,7 @@
+
+
+
+
 body{
   margin:0px;
 }
@@ -60,7 +64,7 @@ p{
   width: 100%;
   height: 50px;
   background-color: rgba(43, 43, 43, 98%);
-  font-size: 1.5em;
+  font-size: 1em;
   text-transform: uppercase;
   font-weight: bolder;
   border: 1px solid;
@@ -155,7 +159,7 @@ p{
   height:600px;
   display: flex;
   grid-area: hd;
-  background-image: url("../pic/head_background.jpg");
+  background-image: url("../img/pictures/head_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -216,7 +220,7 @@ p{
   align-items: center;
   justify-content: space-around;
   height:600px;
-  background: url("../pic/sardinia.jpg");
+  background: url("../img/pictures/sardinia.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -232,7 +236,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../pic/Map_of_Sardinia_Italy.png")  no-repeat center/contain;
+  background: url("../img/maps/map_of_Sardinia_Italy.png")  no-repeat center/contain;
   margin-bottom: 10px;
 }
 
@@ -286,58 +290,58 @@ p{
 }
 
 #art1 {
-  background: url("../pic/bosnia_2019.jpg");
+  background: url("../img/pictures/bosnia_2019.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #art1-title-bg{
-  background: url("../pic/map_of_bosnia.png") no-repeat center/contain;
+  background: url("../img/maps/map_of_bosnia.png") no-repeat center/contain;
 }
 
 #art2 {
-  background: url("../pic/hun_2019_may.jpg");
+  background: url("../img/pictures/hun_2019_may.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #art2-title-bg{
-  background: url("../pic/map_of_hungary.png") no-repeat center/contain;
+  background: url("../img/maps/map_of_hungary.png") no-repeat center/contain;
 }
 
 #art3 {
-  background: url("../pic/switzerland_2019_feb.png");
+  background: url("../img/pictures/switzerland_2019_feb.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #art3-title-bg{
-  background: url("../pic/map-of-switzerland2.png") no-repeat center/contain;
+  background: url("../img/maps/map-of-switzerland2.png") no-repeat center/contain;
 }
 
 #art4 {
-  background: url("../pic/switzerland_2018-19_dec-jan.jpg");
+  background: url("../img/pictures/switzerland_2018-19_dec-jan.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #art4-title-bg{
-  background: url("../pic/map-of-switzerland2.png") no-repeat center/contain;
+  background: url("../img/maps/map-of-switzerland2.png") no-repeat center/contain;
 }
 
 #art5 {
-  background: url("../pic/joyride_switzeland_2019_dec.png");
+  background: url("../img/pictures/joyride_switzeland_2019_dec.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #art5-title-bg{
-  background: url("../pic/map-of-switzerland2.png") no-repeat center/contain;
+  background: url("../img/maps/map-of-switzerland2.png") no-repeat center/contain;
 }
 
 .footer{
