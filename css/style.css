@@ -125,7 +125,7 @@ p{
   font-family: 'Montserrat';
   font-weight: bolder;
   padding-left: 20px;
-  font-size: 1em;
+  font-size: clamp(16px, 4vw, 22px);
   text-decoration: underline;
   border: none;
   background: none;
