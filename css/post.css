@@ -22,18 +22,6 @@ body {
   border-image-slice: 1;
 }
 
-/* .hd-tl-map-cont img {
-  position: absolute;
-  height: 95%;
-}
-
-.hd-tl-map-cont-txt{
-  background: url("../img/icons_and_logos/flag_of_italy.png") no-repeat center/cover;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 8px transparent;
-  z-index: 1;
-} */
-
 .hd-tl-map-cont{
   grid-area: hd-map;
   display: flex;
@@ -71,6 +59,7 @@ body {
 .art {
   text-align: justify;
   color: black;
+  z-index: 0;
 }
 
 .art h1, .art h2{
