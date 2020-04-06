@@ -1,4 +1,5 @@
 @import "menu_style.css";
+@import "flag-border.css";
 
 html {
   font-family: 'Montserrat';
@@ -21,7 +22,7 @@ body {
   border-image-slice: 1;
 }
 
-.hd-tl-map-cont img {
+/* .hd-tl-map-cont img {
   position: absolute;
   height: 95%;
 }
@@ -31,14 +32,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;
   z-index: 1;
-}
+} */
 
 .hd-tl-map-cont{
   grid-area: hd-map;
   display: flex;
   align-items: center;
   justify-content:center;
-  position: relative;
+  background: url("../img/maps/map_of_sardinia_italy.png") no-repeat center/contain;
 }
 
 .hd-tl-info{
