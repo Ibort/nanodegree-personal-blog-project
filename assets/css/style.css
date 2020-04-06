@@ -71,6 +71,11 @@ body p{
   width: 100%;
 }
 
+.intro-text h1{
+  width: 100%;
+  text-align: center;
+}
+
 .intro-img{
   display: flex;
   width: 100%;
@@ -123,6 +128,12 @@ body p{
   flex-flow: column;
   align-items: center;
   width: 100%;
+}
+
+.cont-new-textbox h1,
+.cont-new-textbox h2{
+  width: 100%;
+  text-align: center;
 }
 
 .cont-new-textbox p{
