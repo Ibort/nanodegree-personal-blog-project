@@ -27,7 +27,7 @@ body {
 }
 
 .hd-tl-map-cont-txt{
-  background: url("../img/icons_and_logos/1280px-Flag_of_Italy.png") no-repeat center/cover;
+  background: url("../img/icons_and_logos/flag_of_italy.png") no-repeat center/cover;
   -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;
   z-index: 1;
@@ -64,9 +64,6 @@ body {
   ". hd-map hd-map hd-map ."
   ". . . hd-ft hd-ft";
   background: url("../img/pictures/sardinia.jpg") no-repeat center/cover;
-}
-
-.hd{
   font-size: 2em;
 }
 
@@ -79,12 +76,9 @@ body {
   font-size: 2em;
   text-shadow: none;
 }
-.post{
-  margin: 0 auto;
-}
 
 .post p{
-  margin: 0 auto;
+  margin: 10px;
 }
 .post-img{
   width: 100%;
@@ -102,7 +96,6 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  margin: 10px;
 }
 
 .post-vid-cont{

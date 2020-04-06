@@ -1,39 +1,8 @@
 @import "menu_style.css";
 
-body{
-  margin:0px;
-}
-
-html {
+body {
   font-family: 'Montserrat';
-  color: white;
-}
-
-h1 {
-  text-align: center;
-  margin: 10px 0px 10px 0px;
-  text-shadow: 0px 0px 5px black,
-               1px 1px 1px black;
-}
-
-h2{
-  text-align: center;
-}
-
-p{
-  margin:20px;
-  text-align: justify;
-}
-
-.box{
-  border-bottom: 10px solid;
-  border-image-source: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
-  border-image-slice: 1;
-}
-
-.container {
-  display:flex;
-  flex-flow: column;
+  margin: 0px;
   border-top: 5px solid;
   border-left: 10px solid;
   border-right: 10px solid;
@@ -41,104 +10,150 @@ p{
   border-image-slice: 1;
 }
 
-.header{
-  height:600px;
-  background-image: url("../img/pictures/head_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+body p{
+  margin: 10px;
 }
 
-#hd-title-logo{
-  height:70%;
-  margin: 5%;
+.bottom-border{
+  border-bottom: 5px solid;
+  border-image-source: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
+  border-image-slice: 1;
 }
 
-#hd-yout-logo{
-  height: 15%;
-  margin-right: 25px;
-  float: right;
+.hd{
+  display: grid;
+  grid-template-columns: 100px repeat(4, 1fr) 150px;
+  grid-template-rows: 100px 400px;
+  grid-template-areas:
+  ". hdl hdl hdl . ytb"
+  ". hdl hdl hdl . .";
+  background: url("../img/pictures/head_background.jpg") no-repeat center/cover;
 }
 
-.intro {
-  color: black;
-  background-position: left;
-  background-repeat: no-repeat;
-}
-
-.intro-img {
-  width: 100%;
+.hd-logo{
   display: flex;
+  align-items: center;
+  grid-area: hdl;
+}
+.hd-logo img{
+  width: 80%;
+  max-width: 600px;
+}
+
+.hd-youtube_icon{
+  display: flex;
+  justify-content: center;
+  grid-area: ytb;
+}
+
+.hd-youtube_icon img{
+  height: 100%;
+}
+
+.intro-text{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align:  justify;
+  line-height: 1.5em;
+  width: 100%;
+}
+
+.intro-img{
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .intro-img img{
-  width:100%;
+  width: 100%;
 }
 
-.intro-text {
+.cont-new-tl h1,
+.cont-new-tl h2 {
+  color: white;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  text-shadow: 0px 0px 5px black,
+               1px 1px 1px black;
+}
+
+.cont-new-tl{
+  font-size: 1.5em;
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
-  float: right;
-  background-color: white;
   width: 100%;
+  min-height: 500px;
+  background: url("../img/pictures/sardinia.jpg") no-repeat center/cover;
 }
 
-.content-newest-imgbox{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height :600px;
-  width:100%;
-  background: url("../img/pictures/sardinia.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.content-newest-title{
-  display: flex;
-  justify-content: center;
-}
-
-.content-newest-logo{
-  height: 70%;
-  width: 100%;
-  display: flex;
+.cont-new-tl-map{
+  display:flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
-  background: url("../img/maps/map_of_Sardinia_Italy.png")  no-repeat center/contain;
-  margin-bottom: 10px;
+  min-height: 500px;
+  width: 100%;
+  background: url("../img/maps/map_of_sardinia_italy.png") no-repeat center/contain;
 }
 
-.content-newest-textbox{
+.cont-new-map-cont{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 100%;
+}
+
+.cont-new-textbox{
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  background: white;
+}
+
+.cont-new-textbox p{
+  text-align: justify;
+}
+
+
+.cont-new-textbox a{
   color: black;
-}
-
-.content-newest-textbox button{
-  font-family: 'Montserrat';
   font-weight: bolder;
-  padding-left: 20px;
-  font-size: clamp(16px, 4vw, 22px);
-  text-decoration: underline;
+  margin: 10px auto 10px 10px;
   border: none;
   background: none;
 }
 
-.content-newest-textbox footer{
+.cont-new-textbox footer{
+  margin: 10px 10px 10px auto;
+}
+
+.text-flag-bord{
   display: flex;
-  justify-content: space-between;
+  flex-flow: column;
+  align-items: center;
+  -webkit-text-stroke: 6px transparent;
+}
+
+.bos-flag{
+  background: url("../img/icons_and_logos/flag_of_bosnia.png") no-repeat center/cover;
+  -webkit-background-clip: text;
+}
+
+.ity-flag{
+  background: url("../img/icons_and_logos/flag_of_Italy.png") no-repeat center/cover;
+  -webkit-background-clip: text;
+}
+
+.hun-flag{
+  background: url("../img/icons_and_logos/flag_of_Hungary.png") no-repeat center/cover;
+  -webkit-background-clip: text;
 }
 
 .content h1,
 .content h2,
 .content h3{
+  color: white;
   margin: 5px 0px 0px 0px;
   text-shadow: 0px 0px 5px black,
                1px 1px 1px black;
@@ -151,9 +166,11 @@ p{
   justify-content: space-evenly;
   width: 100%;
   height: 500px;
+  font-size: 1.5em;
 }
 
 .content-box a{
+  background-color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   box-shadow: 0px 0px 3px black;
   text-shadow: 0px 0px 2px black,
@@ -161,6 +178,7 @@ p{
   border: 1px solid white;
   padding: 20px 50px 20px 50px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .content-title-img{
@@ -168,15 +186,12 @@ p{
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  width:80%;
-  height:50%;
+  width:100%;
+  height:100%;
 }
 
 #art1 {
-  background: url("../img/pictures/bosnia_2019.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/pictures/bosnia_2019.jpg") no-repeat center/cover;
 }
 
 #art1-title-bg{
@@ -184,10 +199,7 @@ p{
 }
 
 #art2 {
-  background: url("../img/pictures/hun_2019_may.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/pictures/hun_2019_may.jpg") no-repeat center/cover;;
 }
 
 #art2-title-bg{
@@ -195,10 +207,7 @@ p{
 }
 
 #art3 {
-  background: url("../img/pictures/switzerland_2019_feb.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/pictures/switzerland_2019_feb.png") no-repeat center/cover;
 }
 
 #art3-title-bg{
@@ -206,10 +215,7 @@ p{
 }
 
 #art4 {
-  background: url("../img/pictures/switzerland_2018-19_dec-jan.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/pictures/switzerland_2018-19_dec-jan.jpg") no-repeat center/cover;
 }
 
 #art4-title-bg{
@@ -217,10 +223,7 @@ p{
 }
 
 #art5 {
-  background: url("../img/pictures/joyride_switzeland_2019_dec.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/pictures/joyride_switzeland_2019_dec.png") no-repeat center/cover;
 }
 
 #art5-title-bg{
@@ -237,7 +240,6 @@ p{
 }
 
 .footer span{
-    font-size: 0.5em;
     font-weight: bolder;
 }
 
@@ -253,18 +255,14 @@ p{
 }
 
 @media(min-width:1055px) {
-  html{
-    font-size: 1.5em;
-  }
-  .menu{
-    width: 40%;
-  }
   .intro {
     display: flex;
   }
-  .content-newest{
+
+  .cont-new{
     display: flex;
   }
+
   .content{
     display: flex;
   }
