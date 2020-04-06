@@ -1,0 +1,41 @@
+/* Specific background and map for each content post ------------------------*/
+
+#art1 {
+  background: url("../img/pictures/bosnia_2019.jpg") no-repeat center/cover;
+}
+
+#art1-title-bg{
+  background: url("../img/maps/map_of_bosnia.png") no-repeat center/contain;
+}
+
+#art2 {
+  background: url("../img/pictures/hun_2019_may.jpg") no-repeat center/cover;;
+}
+
+#art2-title-bg{
+  background: url("../img/maps/map_of_hungary.png") no-repeat center/contain;
+}
+
+#art3 {
+  background: url("../img/pictures/switzerland_2019_feb.jpg") no-repeat center/cover;
+}
+
+#art3-title-bg{
+  background: url("../img/maps/map-of-switzerland2.png") no-repeat center/contain;
+}
+
+#art4 {
+  background: url("../img/pictures/switzerland_2018-19_dec-jan.jpg") no-repeat center/cover;
+}
+
+#art4-title-bg{
+  background: url("../img/maps/map-of-switzerland2.png") no-repeat center/contain;
+}
+
+#art5 {
+  background: url("../img/pictures/joyride_switzeland_2019_dec.jpg") no-repeat center/cover;
+}
+
+#art5-title-bg{
+  background: url("../img/maps/map-of-switzerland2.png") no-repeat center/contain;
+}

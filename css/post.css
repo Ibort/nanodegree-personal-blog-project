@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content:center;
-  background: url("../img/maps/map_of_sardinia_italy.png") no-repeat center/contain;
+  background: url("../assets/img/maps/map_of_sardinia_italy.png") no-repeat center/contain;
 }
 
 .hd-tl-info{
@@ -55,7 +55,7 @@ body {
   ". hd-tl hd-tl hd-tl ."
   ". hd-map hd-map hd-map ."
   ". . . hd-ft hd-ft";
-  background: url("../img/pictures/sardinia.jpg") no-repeat center/cover;
+  background: url("../assets/img/pictures/sardinia.jpg") no-repeat center/cover;
   font-size: 2em;
 }
 

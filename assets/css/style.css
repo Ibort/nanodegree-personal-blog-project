@@ -1,0 +1,241 @@
+/* Imported style for menu and for content <h> background -------------------*/
+
+@import "menu_style.css";
+@import "flag-border.css";
+@import "art_bg_and_map.css";
+
+/* Body border, p elelemts margin, default font style for the whole site---- */
+
+body {
+  font-family: 'Montserrat';
+  margin: 0px;
+  border-top: 5px solid;
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border-image-source: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
+  border-image-slice: 1;
+}
+
+body p{
+  margin: 10px;
+}
+
+/* bottom border for style for body elements --------------------------------*/
+
+.bottom-border{
+  border-bottom: 5px solid;
+  border-image-source: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
+  border-image-slice: 1;
+}
+
+/* Header div styling -------------------------------------------------------*/
+
+.hd{
+  display: grid;
+  grid-template-columns: 100px repeat(4, 1fr) 150px;
+  grid-template-rows: 100px 400px;
+  grid-template-areas:
+  ". hdl hdl hdl . ytb"
+  ". hdl hdl hdl . .";
+  background: url("../img/pictures/head_background.jpg") no-repeat center/cover;
+}
+
+.hd-logo{
+  display: flex;
+  align-items: center;
+  grid-area: hdl;
+}
+.hd-logo img{
+  width: 80%;
+  max-width: 600px;
+}
+
+.hd-youtube_icon{
+  display: flex;
+  justify-content: center;
+  grid-area: ytb;
+}
+
+.hd-youtube_icon img{
+  height: 100%;
+}
+
+/* Intro div styling -------------------------------------------------------*/
+
+.intro-text{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align:  justify;
+  line-height: 1.5em;
+  width: 100%;
+}
+
+.intro-img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-img img{
+  width: 100%;
+}
+
+/* Newest content div styling -----------------------------------------------*/
+
+.cont-new-tl h1,
+.cont-new-tl h2 {
+  color: white;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  text-shadow: 0px 0px 5px black,
+               1px 1px 1px black;
+}
+
+.cont-new-tl{
+  font-size: 1.5em;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  min-height: 500px;
+  background: url("../img/pictures/sardinia.jpg") no-repeat center/cover;
+}
+
+.cont-new-tl-map{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
+  background: url("../img/maps/map_of_sardinia_italy.png") no-repeat center/contain;
+}
+
+.cont-new-map-cont{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 100%;
+}
+
+.cont-new-textbox{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cont-new-textbox p{
+  text-align: justify;
+}
+
+
+.cont-new-textbox a{
+  color: black;
+  font-weight: bolder;
+  margin: 10px;
+  align-self: flex-start;
+  width: 100%;
+  border: none;
+  background: none;
+}
+
+.cont-new-textbox footer{
+  text-align: right;
+  margin: 10px;
+  align-self: flex-end;
+  width: 100%;
+}
+
+/* Content div styling ------------------------------------------------------*/
+
+.content h1,
+.content h2,
+.content h3{
+  color: white;
+  margin: 5px 0px 0px 0px;
+  text-shadow: 0px 0px 5px black,
+               1px 1px 1px black;
+}
+
+.content-box{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 500px;
+  font-size: 1.5em;
+}
+
+.content-box a{
+  background-color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  box-shadow: 0px 0px 3px black;
+  text-shadow: 0px 0px 2px black,
+               1px 1px 1px black;
+  border: 1px solid white;
+  padding: 20px 50px 20px 50px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.content-title-img{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100%;
+}
+
+/* Fotter div styling------------------------------------------------------- */
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
+  height: 40px;
+  background-color: black;
+}
+
+.footer span{
+    font-weight: bolder;
+}
+
+.footer-social{
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.footer-social img{
+  margin-right: 5px;
+  height: 100%;
+}
+
+/* Responsinve styling ------------------------------------------------------*/
+
+@media(min-width:1055px) {
+  .intro {
+    display: flex;
+  }
+
+  .cont-new{
+    display: flex;
+  }
+
+  .content{
+    display: flex;
+  }
+}
+
+@media(min-width:1440px) {
+  .cont-new{
+    font-size: 1.5em;
+  }
+  .intro{
+    font-size: 1.5em;
+  }
+}

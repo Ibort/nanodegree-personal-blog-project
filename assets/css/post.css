@@ -1,0 +1,185 @@
+/* Imported style for menu and for content <h> background -------------------*/
+
+@import "menu_style.css";
+@import "flag-border.css";
+
+/* Default h1, h2, body styling ---------------------------------------------*/
+
+h1,h2 {
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  text-shadow: 0px 0px 5px black,
+               1px 1px 1px black;
+}
+
+body {
+  font-family: 'Montserrat';
+  color: white;
+  margin: 0px;
+  border-top: 5px solid;
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border-image-source: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
+  border-image-slice: 1;
+}
+
+/* Header styling -----------------------------------------------------------*/
+
+.hd-tl-map-cont{
+  grid-area: hd-map;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: url("../img/maps/map_of_sardinia_italy.png") no-repeat center/contain;
+}
+
+.hd-tl-info{
+  grid-area: hd-ft;
+  text-align: right;
+}
+
+.hd-tl-info p{
+  font-size: 0.7em;
+  margin: 0px 10px 10px 0px;
+}
+
+.hd-tl{
+  grid-area: hd-tl;
+}
+
+.hd-cont {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 600px auto;
+  grid-template-areas:
+  ". hd-tl hd-tl hd-tl ."
+  ". hd-map hd-map hd-map ."
+  ". . . hd-ft hd-ft";
+  background: url("../img/pictures/sardinia.jpg") no-repeat center/cover;
+  font-size: 2em;
+}
+
+/* Article styling---------------------------------------------------------- */
+
+.art {
+  text-align: justify;
+  color: black;
+  z-index: 0;
+}
+
+.art h1, .art h2{
+  font-size: 2em;
+  text-shadow: none;
+}
+
+.post p{
+  margin: 10px;
+}
+.post-img{
+  width: 100%;
+  margin: 0px;
+  max-width: 100%;
+  align-self: center;
+}
+
+.post-img img{
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.post-text{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.post-vid-cont{
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.post-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Shareing style ------------------------------------------------------------*/
+
+.share-links p{
+  color: black;
+}
+
+.share-links img{
+  width: 100%;
+  height: 100%;
+}
+
+.share-links a {
+  width: 100px;
+  height: 100px;
+}
+
+.share-links{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* Fotter styling -----------------------------------------------------------*/
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
+  height: 40px;
+  background-color: black;
+}
+
+.footer span{
+    font-weight: bolder;
+}
+
+.footer-social{
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.footer-social img{
+  margin-right: 5px;
+  height: 100%;
+}
+
+/* Responsinve elements ------------------------------------------------------*/
+
+@media(min-width:1024px) {
+  .menu{
+    width: 40%;
+  }
+  .post{
+    display: flex;
+    flex-flow: column;
+  }
+  .post-block{
+    display: flex;
+  }
+  .post-block:nth-child(2n){
+    flex-flow: row-reverse;
+  }
+  .post-text{
+    width: 100%;
+  }
+}
+
+@media(min-width:1440px) {
+  .art{
+    font-size: 1.5em;
+  }
+}
