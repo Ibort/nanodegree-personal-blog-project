@@ -120,13 +120,18 @@ body p{
 .cont-new-textbox a{
   color: black;
   font-weight: bolder;
-  margin: 10px auto 10px 10px;
+  margin: 10px;
+  align-self: flex-start;
+  min-width: 100%;
   border: none;
   background: none;
 }
 
 .cont-new-textbox footer{
-  margin: 10px 10px 10px auto;
+  text-align: right;
+  margin: 10px;
+  align-self: flex-end;
+  min-width: 100%;
 }
 
 .content h1,
