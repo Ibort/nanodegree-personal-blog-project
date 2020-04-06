@@ -6,6 +6,7 @@
 /* Default h1, h2, body styling ---------------------------------------------*/
 
 h1,h2 {
+  width: 100%;
   text-align: center;
   margin: 10px 0px 10px 0px;
   text-shadow: 0px 0px 5px black,
@@ -68,7 +69,6 @@ body {
 }
 
 .art h1, .art h2{
-  font-size: 2em;
   text-shadow: none;
 }
 
