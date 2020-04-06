@@ -1,8 +1,8 @@
 /* Imported style for menu and for content <h> background -------------------*/
 
-@import "menu_style.css";
-@import "flag-border.css";
-@import "art_bg_and_map.css";
+@import url(menu_style.css);
+@import url(flag-border.css);
+@import url(art_bg_and_map.css);
 
 /* Body border, p elelemts margin, default font style for the whole site---- */
 
@@ -16,13 +16,13 @@ body {
   border-image-slice: 1;
 }
 
-body p{
+body p {
   margin: 10px;
 }
 
 /* bottom border for style for body elements --------------------------------*/
 
-.bottom-border{
+.bottom-border {
   border-bottom: 5px solid;
   border-image-source: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 28%, rgba(203,122,22,1) 66%, rgba(163,90,0,1) 100%);
   border-image-slice: 1;
@@ -30,7 +30,7 @@ body p{
 
 /* Header div styling -------------------------------------------------------*/
 
-.hd{
+.hd {
   display: grid;
   grid-template-columns: 100px repeat(4, 1fr) 150px;
   grid-template-rows: 100px 400px;
@@ -40,29 +40,29 @@ body p{
   background: url("../img/pictures/head_background.jpg") no-repeat center/cover;
 }
 
-.hd-logo{
+.hd-logo {
   display: flex;
   align-items: center;
   grid-area: hdl;
 }
-.hd-logo img{
+.hd-logo img {
   width: 80%;
   max-width: 600px;
 }
 
-.hd-youtube_icon{
+.hd-youtube_icon {
   display: flex;
   justify-content: center;
   grid-area: ytb;
 }
 
-.hd-youtube_icon img{
+.hd-youtube_icon img {
   height: 100%;
 }
 
 /* Intro div styling -------------------------------------------------------*/
 
-.intro-text{
+.intro-text {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -71,18 +71,18 @@ body p{
   width: 100%;
 }
 
-.intro-text h1{
+.intro-text h1 {
   width: 100%;
   text-align: center;
 }
 
-.intro-img{
+.intro-img {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
-.intro-img img{
+.intro-img img {
   width: 100%;
 }
 
@@ -97,7 +97,7 @@ body p{
                1px 1px 1px black;
 }
 
-.cont-new-tl{
+.cont-new-tl {
   font-size: 1.5em;
   display: flex;
   flex-flow: column;
@@ -106,8 +106,8 @@ body p{
   background: url("../img/pictures/sardinia.jpg") no-repeat center/cover;
 }
 
-.cont-new-tl-map{
-  display:flex;
+.cont-new-tl-map {
+  display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
@@ -116,14 +116,14 @@ body p{
   background: url("../img/maps/map_of_sardinia_italy.png") no-repeat center/contain;
 }
 
-.cont-new-map-cont{
+.cont-new-map-cont {
   display: flex;
   align-items: center;
   justify-content:center;
   height: 100%;
 }
 
-.cont-new-textbox{
+.cont-new-textbox {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -131,17 +131,17 @@ body p{
 }
 
 .cont-new-textbox h1,
-.cont-new-textbox h2{
+.cont-new-textbox h2 {
   width: 100%;
   text-align: center;
 }
 
-.cont-new-textbox p{
+.cont-new-textbox p {
   text-align: justify;
 }
 
 
-.cont-new-textbox a{
+.cont-new-textbox a {
   color: black;
   font-weight: bolder;
   margin: 10px;
@@ -151,7 +151,7 @@ body p{
   background: none;
 }
 
-.cont-new-textbox footer{
+.cont-new-textbox footer {
   text-align: right;
   margin: 10px;
   align-self: flex-end;
@@ -162,7 +162,7 @@ body p{
 
 .content h1,
 .content h2,
-.content h3{
+.content h3 {
   color: white;
   font-size: 2em;
   margin: 5px 0 0 0;
@@ -170,7 +170,7 @@ body p{
                1px 1px 1px black;
 }
 
-.content-box{
+.content-box {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -180,7 +180,7 @@ body p{
   font-size: 1.5em;
 }
 
-.content-box a{
+.content-box a {
   background-color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   box-shadow: 0 0 3px black;
@@ -192,8 +192,8 @@ body p{
   margin-bottom: 10px;
 }
 
-.content-title-img{
-  display:flex;
+.content-title-img {
+  display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
@@ -203,7 +203,7 @@ body p{
 
 /* Fotter div styling------------------------------------------------------- */
 
-.footer{
+.footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -212,17 +212,17 @@ body p{
   background-color: black;
 }
 
-.footer span{
+.footer span {
     font-weight: bolder;
 }
 
-.footer-social{
+.footer-social {
   display: flex;
   justify-content: space-between;
   height: 80%;
 }
 
-.footer-social img{
+.footer-social img {
   margin-right: 5px;
   height: 100%;
 }
@@ -234,20 +234,20 @@ body p{
     display: flex;
   }
 
-  .cont-new{
+  .cont-new {
     display: flex;
   }
 
-  .content{
+  .content {
     display: flex;
   }
 }
 
 @media(min-width:1440px) {
-  .cont-new{
+  .cont-new {
     font-size: 1.5em;
   }
-  .intro{
+  .intro {
     font-size: 1.5em;
   }
 }

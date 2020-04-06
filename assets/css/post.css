@@ -1,11 +1,12 @@
 /* Imported style for menu and for content <h> background -------------------*/
 
-@import "menu_style.css";
-@import "flag-border.css";
+@import url(menu_style.css);
+@import url(flag-border.css);
 
 /* Default h1, h2, body styling ---------------------------------------------*/
 
-h1,h2 {
+h1,
+h2 {
   width: 100%;
   text-align: center;
   margin: 10px 0 10px 0;
@@ -68,7 +69,8 @@ body {
   z-index: 0;
 }
 
-.art h1, .art h2{
+.art h1,
+.art h2{
   text-shadow: none;
 }
 
@@ -108,7 +110,7 @@ body {
   height: 100%;
 }
 
-/* Shareing style ------------------------------------------------------------*/
+/* Sharing style ------------------------------------------------------------*/
 
 .share-links p{
   color: black;
@@ -126,7 +128,7 @@ body {
 
 .share-links{
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   margin: 10px;
 }
