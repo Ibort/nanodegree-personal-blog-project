@@ -5,6 +5,8 @@
   top: 30px;
   left: 30px;
   z-index: 1;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-cont{
@@ -76,7 +78,7 @@
   border-image-source: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
   border-image-slice: 1;
   background: black;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .el-elements hr{
