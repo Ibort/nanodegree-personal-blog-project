@@ -7,7 +7,7 @@
 /* Body border, p elelemts margin, default font style for the whole site---- */
 
 body {
-  font-family: 'Montserrat';
+  font-family: Arial;
   margin: 0;
   border-top: 5px solid;
   border-left: 10px solid;
