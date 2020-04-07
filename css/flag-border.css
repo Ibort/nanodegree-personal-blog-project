@@ -8,21 +8,21 @@
 }
 
 .bos-flag{
-  background: url("../img/icons_and_logos/flag_of_bosnia.png") no-repeat center/cover;
+  background: url("../assets/img/icons_and_logos/flag_of_bosnia.png") no-repeat center/cover;
   -webkit-background-clip: text;
 }
 
 .ity-flag{
-  background: url("../img/icons_and_logos/flag_of_Italy.png") no-repeat center/cover;
+  background: url("../assets/img/icons_and_logos/flag_of_Italy.png") no-repeat center/cover;
   -webkit-background-clip: text;
 }
 
 .hun-flag{
-  background: url("../img/icons_and_logos/flag_of_Hungary.png") no-repeat center/cover;
+  background: url("../assets/img/icons_and_logos/flag_of_Hungary.png") no-repeat center/cover;
   -webkit-background-clip: text;
 }
 
 .ch-flag{
-  background: url("../img/icons_and_logos/flag_of_switzerland.png") no-repeat center/cover;
+  background: url("../assets/img/icons_and_logos/flag_of_switzerland.png") no-repeat center/cover;
   -webkit-background-clip: text;
 }
